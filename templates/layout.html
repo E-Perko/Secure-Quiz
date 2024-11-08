@@ -13,7 +13,22 @@
     <title>Secure Quiz - {% block title %}{% endblock %}</title>
   </head>
   <body>
-  
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href=".">Secure Quiz</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li {% if active_page == "about" %} class="active"{% endif %}><a href=".">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div id="content">
+      <h1>{% block heading %}{% endblock %}</h1>
+      {% block body %}{% endblock %}
+    </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
