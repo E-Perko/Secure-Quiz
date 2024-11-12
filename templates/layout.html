@@ -13,17 +13,7 @@
     <title>Secure Quiz - {% block title %}{% endblock %}</title>
   </head>
   <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href=".">Secure Quiz</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li {% if active_page == "home" %} class="active"{% endif %}><a href=".">Home</a></li>
-        </ul>
-      </div>
-    </nav>
-    
+  
     <div id="content">
       <h1>{% block heading %}{% endblock %}</h1>
       {% block body %}{% endblock %}
