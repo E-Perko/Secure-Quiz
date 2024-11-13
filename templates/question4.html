@@ -1,1 +1,24 @@
+{% extends "layout.html" %}
 
+{% block title %}Question 4{% endblock %}
+
+{% block heading %}Question 4{% endblock %}
+
+{% block body %}
+<p>The polynomial function k is given by k(x) = ax<sup>4</sup>-bx<sup>3</sup>+15, where a and b are nonzero real constants. Each of the zeros of k has multiplicity 1. In the xy-plane, an x -intercept of the graph of k is (17.997, 0). A zero of k is − − 0.478 0.801i. Which of the following statements must be true?</p><br>
+
+ <form action={{ url_for("renderQuestion5") }} method="POST">
+  <input type="radio" id="13" name="answer4" value="1" required>
+  <label for="13">The graph of k has three x -intercepts</label><br>
+  <input type="radio" id="14" name="answer4" value="2">
+  <label for="14">− + 0.478 0.801i is a zero of k.</label><br>  
+  <input type="radio" id="15" name="answer4" value="3">
+  <label for="15"> The equation k x( ) = 0 has four real solutions.</label><br>
+  <input type="radio" id="16" name="answer4" value="4">
+  <label for="16"> The graph of k is tangent to the x -axis at x = 17.997.</label><br>
+  <input type="submit" value="Next">
+ </form> 
+
+{% endblock %}
+
+<!--14-->

@@ -1,1 +1,18 @@
+{% extends "layout.html" %}
 
+{% block title %}Results{% endblock %}
+
+{% block heading %}You got _% of questions correct.{% endblock %}
+
+{% block body %}
+
+ <p>Your last name is: {{ session['answer1'] }} </p>
+ <p>Your last name is: {{ session['answer2'] }} </p>
+ <p>Your last name is: {{ session['answer3'] }} </p>
+ <p>Your last name is: {{ session['answer4'] }} </p>
+ <p>Your last name is: {{ session['answer5'] }} </p>
+
+
+<a href="/startOver">Start over</a>
+
+{% endblock %}

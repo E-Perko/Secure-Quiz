@@ -1,1 +1,28 @@
+{% extends "layout.html" %}
 
+{% block title %}Question 3{% endblock %}
+
+{% block heading %}Question 3{% endblock %}
+
+{% block body %}
+<p>“I can safely say that before the commencement of what I may call the Railway Period, not only were the wages in most parts of the country established by tradition and authority, rather than by the natural laws of supply and demand, but the opportunity to work was in general restricted to particular spots. For the first time in history the Indian finds that he has in his power of labor a valuable possession which, if he uses it right, will give him something much better than mere subsistence. Follow him to his own home, in some remote village, and you will find that the railway laborer has brought back not only new modes of working and a new feeling of self-respect and independence, but also new ideas of what government and laws can offer him. And he is, I believe, a better and more loyal subject, as he is certainly a more useful laborer.”</p><br>
+
+<p>Bartle Frere, British governor of the Bombay Presidency, India, speech on opening of a rail line, 1863</p><br>
+
+<p>Frere’s view of the changing opportunities for Indian labor most directly reflects the influence of which of the following?</p><br>
+
+ <form action={{ url_for("renderQuestion4") }} method="POST">
+  <input type="radio" id="9" name="answer3" value="1" required>
+  <label for="9">The ideals of classical liberalism as stated by Adam Smith and John Stuart Mill</label><br>
+  <input type="radio" id="10" name="answer3" value="2">
+  <label for="10">The ideals of communism as stated by Karl Marx and Friedrich Engels</label><br>  
+  <input type="radio" id="11" name="answer3" value="3">
+  <label for="11">The ideals of the Enlightenment as stated by political revolutionaries such as Simon Bolivar</label><br>
+  <input type="radio" id="12" name="answer3" value="4">
+  <label for="12">The ideals of mercantilism as developed by European state-sponsored joint-stock trading</label><br><br>
+  <input type="submit" value="Next">
+ </form> 
+
+{% endblock %}
+
+<!--9-->

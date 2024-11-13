@@ -1,1 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}Question 2{% endblock %}
+
+{% block heading %}Question 2{% endblock %}
+
+{% block body %}
+<p>_ C<sub>6</sub>H<sub>10</sub>O<sub>5</sub> + _ O<sub>2</sub> —> _ CO<sub>2</sub> + _ H<sub>2</sub>O</p>
+<p>In the above reaction, how many grams of CO<sub>2</sub> would be produced if 42.0 grams of C<sub>6</sub>H<sub>10</sub>O<sub>5</sub> reacted? <br> (H has a molar mass of 1.008g/mol, C has a molar mass of 12.011g/mol, and O has a molar mass of 15.999g/mol)</p><br>
+
+ <form action={{ url_for("renderQuestion3") }} method="POST">
+  <input type="radio" id="5" name="answer2" value="1" required>
+  <label for="5">252</label><br>
+  <input type="radio" id="6" name="answer2" value="2">
+  <label for="6">36</label><br>
+  <input type="radio" id="7" name="answer2" value="3">
+  <label for="7">68</label><br>
+  <input type="radio" id="8" name="answer2" value="4">
+  <label for="8">29.4</label><br><br>
+  <input type="submit" value="Next">
+ </form> 
+
+{% endblock %}
 

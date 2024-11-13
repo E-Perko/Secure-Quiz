@@ -1,1 +1,24 @@
+{% extends "layout.html" %}
 
+{% block title %}Question 5{% endblock %}
+
+{% block heading %}Question 5{% endblock %}
+
+{% block body %}
+<p>After several trials during which a dog is given a certain kind of food at the same time that a specific tone is sounded, there is evidence of conditioning if the dog salivates when</p><br>
+
+ <form action={{ url_for("renderResults") }} method="POST">
+  <input type="radio" id="17" name="answer5" value="1" required>
+  <label for="17">the tone only is presented</label><br>
+  <input type="radio" id="18" name="answer5" value="2">
+  <label for="18">the food only is presented</label><br>  
+  <input type="radio" id="19" name="answer5" value="3">
+  <label for="19">the food and tone are presented together</label><br>
+  <input type="radio" id="20" name="answer5" value="4">
+  <label for="20">a different tone is presented with the food</label><br><br>
+  <input type="submit" value="Submit">
+ </form> 
+
+{% endblock %}
+
+<!--17-->
