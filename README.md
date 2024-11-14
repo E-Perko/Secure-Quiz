@@ -1,3 +1,3 @@
 # Secure-Quiz
 
-https://secure-quiz-q7yy.onrender.com/
+https://secure-quiz-rxzn.onrender.com/
