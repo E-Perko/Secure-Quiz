@@ -1,9 +1,0 @@
-Python array of correct answers, 1 or 0: correct[1,1,0,1,0]
-
-Python function answer_check reads each value in the array, correct answers are given the correct id and incorrect answers are given the incorrect id and show the correct answer
-
-correct id has green text and incorrect id has red text
-
-Title: Secure Academic Exam
-
-Description: Can you correctly answer all five difficult academic questions?
