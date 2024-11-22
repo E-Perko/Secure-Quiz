@@ -2,17 +2,17 @@
 
 {% block title %}Results{% endblock %}
 
-{% block heading %}You got {{ correct }}% of questions correct.{% endblock %}
+{% block heading %}You got {{ session["correct"] }}% of questions correct.{% endblock %}
 
 {% block body %}
 
- <p>You finished the quiz in {{ time }}.</p><br>
+ <p>You finished the quiz in {{ session["timediff"] }} seconds.</p><br>
 
- <p>Question 1: {{ session['answer1'] }} </p>
- <p>Question 2: {{ session['answer2'] }} </p>
- <p>Question 3: {{ session['answer3'] }} </p>
- <p>Question 4: {{ session['answer4'] }} </p>
- <p>Question 5: {{ session['answer5'] }} </p>
+ <p>Question 1: {{ session['question1'] }} </p>
+ <p>Question 2: {{ session['question2'] }} </p>
+ <p>Question 3: {{ session['question3'] }} </p>
+ <p>Question 4: {{ session['question4'] }} </p>
+ <p>Question 5: {{ session['question5'] }} </p>
 
 
 <a href="/startOver">Start over</a>

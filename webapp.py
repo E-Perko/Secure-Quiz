@@ -54,37 +54,41 @@ def renderResults():
     correct=0
     if session["answer1"]=="4":
         correct=correct+1
-        session["answer1"]="CORRECT"
+        session["question1"]="CORRECT"
     else:
-        session["answer1"]="INCORRECT"
+        session["question1"]="INCORRECT"
         
     if session["answer2"]=="3":
         correct=correct+1
-        session["answer2"]="CORRECT"
+        session["question2"]="CORRECT"
     else:
-        session["answer2"]="INCORRECT"
+        session["question2"]="INCORRECT"
         
     if session["answer3"]=="1":
         correct=correct+1
-        session["answer3"]="CORRECT"
+        session["question3"]="CORRECT"
     else:
-        session["answer3"]="INCORRECT"
+        session["question3"]="INCORRECT"
         
     if session["answer4"]=="2":
         correct=correct+1
-        session["answer4"]="CORRECT"
+        session["question4"]="CORRECT"
     else:
-        session["answer4"]="INCORRECT"
+        session["question4"]="INCORRECT"
         
     if session["answer5"]=="1":
         correct=correct+1
-        session["answer5"]="CORRECT"
+        session["question5"]="CORRECT"
     else:
-        session["answer5"]="INCORRECT"
+        session["question5"]="INCORRECT"
         
     session["time2"] = time.time()
-    timediff = session["time2"]-session["time1"]
-    return render_template('results.html', time=timediff, correct=correct*20)
+    if not "timediff" in session:
+        session["timediff"] = session["time2"]-session["time1"]
+        
+    if not "correct" in session:
+        session["correct"]=correct*20
+    return render_template('results.html')
 
 def is_localhost():
     root_url = request.url_root
