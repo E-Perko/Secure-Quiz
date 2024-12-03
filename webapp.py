@@ -96,4 +96,4 @@ def is_localhost():
     return root_url == developer_url
     
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(debug=False)
